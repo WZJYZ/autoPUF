@@ -1,0 +1,583 @@
+{
+    "ltx_root": {
+        "version": 4,
+        "minor": 0,
+        "ltx_data": [
+            {
+                "name": "EDA_PROBESET",
+                "active": true,
+                "debug_cores": [
+                    {
+                        "type": "XSDB_V3",
+                        "name": "dbg_hub",
+                        "spec": "labtools_xsdbm_v3"
+                    },
+                    {
+                        "type": "ILA_V3",
+                        "name": "inst_ila",
+                        "spec": "labtools_ila_v6",
+                        "ipName": "ila",
+                        "core_location": {
+                            "user_chain": 1,
+                            "slave_index": 0,
+                            "bscan_switch_index": 0
+                        },
+                        "uuid": "F1DD75A873155B6F98E4D8E494BD4B4C",
+                        "pins": [
+                            {
+                                "name": "probe0",
+                                "id": 0,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 31,
+                                "portIndex": 0,
+                                "nets": [
+                                    {
+                                        "name": "ch",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "ch[31]"
+                                            },
+                                            {
+                                                "name": "ch[30]"
+                                            },
+                                            {
+                                                "name": "ch[29]"
+                                            },
+                                            {
+                                                "name": "ch[28]"
+                                            },
+                                            {
+                                                "name": "ch[27]"
+                                            },
+                                            {
+                                                "name": "ch[26]"
+                                            },
+                                            {
+                                                "name": "ch[25]"
+                                            },
+                                            {
+                                                "name": "ch[24]"
+                                            },
+                                            {
+                                                "name": "ch[23]"
+                                            },
+                                            {
+                                                "name": "ch[22]"
+                                            },
+                                            {
+                                                "name": "ch[21]"
+                                            },
+                                            {
+                                                "name": "ch[20]"
+                                            },
+                                            {
+                                                "name": "ch[19]"
+                                            },
+                                            {
+                                                "name": "ch[18]"
+                                            },
+                                            {
+                                                "name": "ch[17]"
+                                            },
+                                            {
+                                                "name": "ch[16]"
+                                            },
+                                            {
+                                                "name": "ch[15]"
+                                            },
+                                            {
+                                                "name": "ch[14]"
+                                            },
+                                            {
+                                                "name": "ch[13]"
+                                            },
+                                            {
+                                                "name": "ch[12]"
+                                            },
+                                            {
+                                                "name": "ch[11]"
+                                            },
+                                            {
+                                                "name": "ch[10]"
+                                            },
+                                            {
+                                                "name": "ch[9]"
+                                            },
+                                            {
+                                                "name": "ch[8]"
+                                            },
+                                            {
+                                                "name": "ch[7]"
+                                            },
+                                            {
+                                                "name": "ch[6]"
+                                            },
+                                            {
+                                                "name": "ch[5]"
+                                            },
+                                            {
+                                                "name": "ch[4]"
+                                            },
+                                            {
+                                                "name": "ch[3]"
+                                            },
+                                            {
+                                                "name": "ch[2]"
+                                            },
+                                            {
+                                                "name": "ch[1]"
+                                            },
+                                            {
+                                                "name": "ch[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe1",
+                                "id": 1,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 1,
+                                "nets": [
+                                    {
+                                        "name": "rsp_buf_1",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe2",
+                                "id": 2,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 2,
+                                "nets": [
+                                    {
+                                        "name": "start_1",
+                                        "isBus": false
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "VIO_V2",
+                        "name": "inst_vio",
+                        "spec": "labtools_vio_v3",
+                        "ipName": "vio",
+                        "core_location": {
+                            "user_chain": 1,
+                            "slave_index": 1,
+                            "bscan_switch_index": 0
+                        },
+                        "uuid": "111BBB8DC4C1534A8767D335C434611B",
+                        "pins": [
+                            {
+                                "name": "probe_in0",
+                                "id": 3,
+                                "type": "DATA",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 0,
+                                "nets": [
+                                    {
+                                        "name": "rsp_buf",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out0",
+                                "id": 4,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 0,
+                                "nets": [
+                                    {
+                                        "name": "rst",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out1",
+                                "id": 5,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 1,
+                                "nets": [
+                                    {
+                                        "name": "start",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out2",
+                                "id": 6,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 31,
+                                "portIndex": 2,
+                                "nets": [
+                                    {
+                                        "name": "adj0",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "adj0[31]"
+                                            },
+                                            {
+                                                "name": "adj0[30]"
+                                            },
+                                            {
+                                                "name": "adj0[29]"
+                                            },
+                                            {
+                                                "name": "adj0[28]"
+                                            },
+                                            {
+                                                "name": "adj0[27]"
+                                            },
+                                            {
+                                                "name": "adj0[26]"
+                                            },
+                                            {
+                                                "name": "adj0[25]"
+                                            },
+                                            {
+                                                "name": "adj0[24]"
+                                            },
+                                            {
+                                                "name": "adj0[23]"
+                                            },
+                                            {
+                                                "name": "adj0[22]"
+                                            },
+                                            {
+                                                "name": "adj0[21]"
+                                            },
+                                            {
+                                                "name": "adj0[20]"
+                                            },
+                                            {
+                                                "name": "adj0[19]"
+                                            },
+                                            {
+                                                "name": "adj0[18]"
+                                            },
+                                            {
+                                                "name": "adj0[17]"
+                                            },
+                                            {
+                                                "name": "adj0[16]"
+                                            },
+                                            {
+                                                "name": "adj0[15]"
+                                            },
+                                            {
+                                                "name": "adj0[14]"
+                                            },
+                                            {
+                                                "name": "adj0[13]"
+                                            },
+                                            {
+                                                "name": "adj0[12]"
+                                            },
+                                            {
+                                                "name": "adj0[11]"
+                                            },
+                                            {
+                                                "name": "adj0[10]"
+                                            },
+                                            {
+                                                "name": "adj0[9]"
+                                            },
+                                            {
+                                                "name": "adj0[8]"
+                                            },
+                                            {
+                                                "name": "adj0[7]"
+                                            },
+                                            {
+                                                "name": "adj0[6]"
+                                            },
+                                            {
+                                                "name": "adj0[5]"
+                                            },
+                                            {
+                                                "name": "adj0[4]"
+                                            },
+                                            {
+                                                "name": "adj0[3]"
+                                            },
+                                            {
+                                                "name": "adj0[2]"
+                                            },
+                                            {
+                                                "name": "adj0[1]"
+                                            },
+                                            {
+                                                "name": "adj0[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out3",
+                                "id": 7,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 31,
+                                "portIndex": 3,
+                                "nets": [
+                                    {
+                                        "name": "adj1",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "adj1[31]"
+                                            },
+                                            {
+                                                "name": "adj1[30]"
+                                            },
+                                            {
+                                                "name": "adj1[29]"
+                                            },
+                                            {
+                                                "name": "adj1[28]"
+                                            },
+                                            {
+                                                "name": "adj1[27]"
+                                            },
+                                            {
+                                                "name": "adj1[26]"
+                                            },
+                                            {
+                                                "name": "adj1[25]"
+                                            },
+                                            {
+                                                "name": "adj1[24]"
+                                            },
+                                            {
+                                                "name": "adj1[23]"
+                                            },
+                                            {
+                                                "name": "adj1[22]"
+                                            },
+                                            {
+                                                "name": "adj1[21]"
+                                            },
+                                            {
+                                                "name": "adj1[20]"
+                                            },
+                                            {
+                                                "name": "adj1[19]"
+                                            },
+                                            {
+                                                "name": "adj1[18]"
+                                            },
+                                            {
+                                                "name": "adj1[17]"
+                                            },
+                                            {
+                                                "name": "adj1[16]"
+                                            },
+                                            {
+                                                "name": "adj1[15]"
+                                            },
+                                            {
+                                                "name": "adj1[14]"
+                                            },
+                                            {
+                                                "name": "adj1[13]"
+                                            },
+                                            {
+                                                "name": "adj1[12]"
+                                            },
+                                            {
+                                                "name": "adj1[11]"
+                                            },
+                                            {
+                                                "name": "adj1[10]"
+                                            },
+                                            {
+                                                "name": "adj1[9]"
+                                            },
+                                            {
+                                                "name": "adj1[8]"
+                                            },
+                                            {
+                                                "name": "adj1[7]"
+                                            },
+                                            {
+                                                "name": "adj1[6]"
+                                            },
+                                            {
+                                                "name": "adj1[5]"
+                                            },
+                                            {
+                                                "name": "adj1[4]"
+                                            },
+                                            {
+                                                "name": "adj1[3]"
+                                            },
+                                            {
+                                                "name": "adj1[2]"
+                                            },
+                                            {
+                                                "name": "adj1[1]"
+                                            },
+                                            {
+                                                "name": "adj1[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out4",
+                                "id": 8,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 31,
+                                "portIndex": 4,
+                                "nets": [
+                                    {
+                                        "name": "ch_seed",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "ch_seed[31]"
+                                            },
+                                            {
+                                                "name": "ch_seed[30]"
+                                            },
+                                            {
+                                                "name": "ch_seed[29]"
+                                            },
+                                            {
+                                                "name": "ch_seed[28]"
+                                            },
+                                            {
+                                                "name": "ch_seed[27]"
+                                            },
+                                            {
+                                                "name": "ch_seed[26]"
+                                            },
+                                            {
+                                                "name": "ch_seed[25]"
+                                            },
+                                            {
+                                                "name": "ch_seed[24]"
+                                            },
+                                            {
+                                                "name": "ch_seed[23]"
+                                            },
+                                            {
+                                                "name": "ch_seed[22]"
+                                            },
+                                            {
+                                                "name": "ch_seed[21]"
+                                            },
+                                            {
+                                                "name": "ch_seed[20]"
+                                            },
+                                            {
+                                                "name": "ch_seed[19]"
+                                            },
+                                            {
+                                                "name": "ch_seed[18]"
+                                            },
+                                            {
+                                                "name": "ch_seed[17]"
+                                            },
+                                            {
+                                                "name": "ch_seed[16]"
+                                            },
+                                            {
+                                                "name": "ch_seed[15]"
+                                            },
+                                            {
+                                                "name": "ch_seed[14]"
+                                            },
+                                            {
+                                                "name": "ch_seed[13]"
+                                            },
+                                            {
+                                                "name": "ch_seed[12]"
+                                            },
+                                            {
+                                                "name": "ch_seed[11]"
+                                            },
+                                            {
+                                                "name": "ch_seed[10]"
+                                            },
+                                            {
+                                                "name": "ch_seed[9]"
+                                            },
+                                            {
+                                                "name": "ch_seed[8]"
+                                            },
+                                            {
+                                                "name": "ch_seed[7]"
+                                            },
+                                            {
+                                                "name": "ch_seed[6]"
+                                            },
+                                            {
+                                                "name": "ch_seed[5]"
+                                            },
+                                            {
+                                                "name": "ch_seed[4]"
+                                            },
+                                            {
+                                                "name": "ch_seed[3]"
+                                            },
+                                            {
+                                                "name": "ch_seed[2]"
+                                            },
+                                            {
+                                                "name": "ch_seed[1]"
+                                            },
+                                            {
+                                                "name": "ch_seed[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

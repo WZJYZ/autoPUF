@@ -1,0 +1,539 @@
+
+*** Running vivado
+    with args -log MOD_HW.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source MOD_HW.tcl
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source MOD_HW.tcl -notrace
+Command: synth_design -top MOD_HW -part xc7z020clg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 21992 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 429.848 ; gain = 95.023
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'MOD_HW' [D:/demo2/autoPUF/autoPUF.srcs/sources_1/new/MOD_HW.v:1]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [D:/demo2/autoPUF/autoPUF.srcs/sources_1/new/MOD_HW.v:7]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [D:/demo2/autoPUF/autoPUF.srcs/sources_1/new/MOD_HW.v:20]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [D:/demo2/autoPUF/autoPUF.srcs/sources_1/new/MOD_HW.v:21]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [D:/demo2/autoPUF/autoPUF.srcs/sources_1/new/MOD_HW.v:22]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [D:/demo2/autoPUF/autoPUF.srcs/sources_1/new/MOD_HW.v:23]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [D:/demo2/autoPUF/autoPUF.srcs/sources_1/new/MOD_HW.v:24]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [D:/demo2/autoPUF/autoPUF.srcs/sources_1/new/MOD_HW.v:25]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [D:/demo2/autoPUF/autoPUF.srcs/sources_1/new/MOD_HW.v:26]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [D:/demo2/autoPUF/autoPUF.srcs/sources_1/new/MOD_HW.v:27]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [D:/demo2/autoPUF/autoPUF.srcs/sources_1/new/MOD_HW.v:28]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [D:/demo2/autoPUF/autoPUF.srcs/sources_1/new/MOD_HW.v:29]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [D:/demo2/autoPUF/autoPUF.srcs/sources_1/new/MOD_HW.v:30]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [D:/demo2/autoPUF/autoPUF.srcs/sources_1/new/MOD_HW.v:31]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [D:/demo2/autoPUF/autoPUF.srcs/sources_1/new/MOD_HW.v:32]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [D:/demo2/autoPUF/autoPUF.srcs/sources_1/new/MOD_HW.v:33]
+INFO: [Synth 8-6157] synthesizing module 'IBUFDS' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:20423]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DIFF_TERM bound to: FALSE - type: string 
+	Parameter DQS_BIAS bound to: FALSE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: FALSE - type: string 
+	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IBUFDS' (1#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:20423]
+INFO: [Synth 8-6157] synthesizing module 'MOD_BUF_CH_ADJ' [D:/demo2/autoPUF/autoPUF.srcs/sources_1/new/MOD_BUF_CH_ADJ.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'MOD_BUF_CH_ADJ' (2#1) [D:/demo2/autoPUF/autoPUF.srcs/sources_1/new/MOD_BUF_CH_ADJ.v:1]
+INFO: [Synth 8-6157] synthesizing module 'MOD_CHCONTROL' [D:/demo2/autoPUF/autoPUF.srcs/sources_1/new/MOD_CHCONTROL.v:1]
+INFO: [Synth 8-5837] Detected dual asynchronous set and preset for register enable_reg in module MOD_CHCONTROL. This is not a recommended register style for Xilinx devices  [D:/demo2/autoPUF/autoPUF.srcs/sources_1/new/MOD_CHCONTROL.v:16]
+INFO: [Synth 8-6155] done synthesizing module 'MOD_CHCONTROL' (3#1) [D:/demo2/autoPUF/autoPUF.srcs/sources_1/new/MOD_CHCONTROL.v:1]
+INFO: [Synth 8-6157] synthesizing module 'MOD_LFSR' [D:/demo2/autoPUF/autoPUF.srcs/sources_1/new/MOD_LFSR.v:1]
+WARNING: [Synth 8-5788] Register OUT_reg in module MOD_LFSR is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/demo2/autoPUF/autoPUF.srcs/sources_1/new/MOD_LFSR.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'MOD_LFSR' (4#1) [D:/demo2/autoPUF/autoPUF.srcs/sources_1/new/MOD_LFSR.v:1]
+INFO: [Synth 8-6157] synthesizing module 'MOD_APUF' [D:/demo2/autoPUF/autoPUF.srcs/sources_1/new/MOD_APUF.v:1]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [D:/demo2/autoPUF/autoPUF.srcs/sources_1/new/MOD_APUF.v:10]
+INFO: [Synth 8-6157] synthesizing module 'LUT6' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
+	Parameter INIT bound to: 64'b0000000000000000000000000000000000000000000000000000000000000010 
+INFO: [Synth 8-6155] done synthesizing module 'LUT6' (5#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
+INFO: [Synth 8-6157] synthesizing module 'MOD_PATH' [D:/demo2/autoPUF/autoPUF.srcs/sources_1/new/MOD_PATH.v:1]
+INFO: [Synth 8-6157] synthesizing module 'MOD_BLOCK' [D:/demo2/autoPUF/autoPUF.srcs/sources_1/new/MOD_BLOCK.v:1]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized0' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
+	Parameter INIT bound to: 64'b0000000000000000000000000000000000000000000000000000000011001010 
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized0' (5#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26626]
+INFO: [Synth 8-6155] done synthesizing module 'MOD_BLOCK' (6#1) [D:/demo2/autoPUF/autoPUF.srcs/sources_1/new/MOD_BLOCK.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'MOD_PATH' (7#1) [D:/demo2/autoPUF/autoPUF.srcs/sources_1/new/MOD_PATH.v:1]
+INFO: [Synth 8-6157] synthesizing module 'MOD_ARBITER' [D:/demo2/autoPUF/autoPUF.srcs/sources_1/new/MOD_ARBITER.v:1]
+INFO: [Synth 8-6157] synthesizing module 'FDCE' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:3755]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_CLR_INVERTED bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'FDCE' (8#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:3755]
+INFO: [Synth 8-6155] done synthesizing module 'MOD_ARBITER' (9#1) [D:/demo2/autoPUF/autoPUF.srcs/sources_1/new/MOD_ARBITER.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'MOD_APUF' (10#1) [D:/demo2/autoPUF/autoPUF.srcs/sources_1/new/MOD_APUF.v:1]
+INFO: [Synth 8-6157] synthesizing module 'MOD_RSPCONTROL' [D:/demo2/autoPUF/autoPUF.srcs/sources_1/new/MOD_RSPCONTROL.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'MOD_RSPCONTROL' (11#1) [D:/demo2/autoPUF/autoPUF.srcs/sources_1/new/MOD_RSPCONTROL.v:1]
+INFO: [Synth 8-6157] synthesizing module 'vio' [D:/demo2/autoPUF/autoPUF.runs/synth_1/.Xil/Vivado-10376-JUSAexcalibur/realtime/vio_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'vio' (12#1) [D:/demo2/autoPUF/autoPUF.runs/synth_1/.Xil/Vivado-10376-JUSAexcalibur/realtime/vio_stub.v:6]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [D:/demo2/autoPUF/autoPUF.srcs/sources_1/new/MOD_HW.v:52]
+INFO: [Synth 8-6157] synthesizing module 'ila' [D:/demo2/autoPUF/autoPUF.runs/synth_1/.Xil/Vivado-10376-JUSAexcalibur/realtime/ila_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ila' (13#1) [D:/demo2/autoPUF/autoPUF.runs/synth_1/.Xil/Vivado-10376-JUSAexcalibur/realtime/ila_stub.v:6]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'inst_vio'. This will prevent further optimization [D:/demo2/autoPUF/autoPUF.srcs/sources_1/new/MOD_HW.v:41]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'lfsr'. This will prevent further optimization [D:/demo2/autoPUF/autoPUF.srcs/sources_1/new/MOD_HW.v:37]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'chcontrol'. This will prevent further optimization [D:/demo2/autoPUF/autoPUF.srcs/sources_1/new/MOD_HW.v:36]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'inst_ila'. This will prevent further optimization [D:/demo2/autoPUF/autoPUF.srcs/sources_1/new/MOD_HW.v:52]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'buf_ch_adj'. This will prevent further optimization [D:/demo2/autoPUF/autoPUF.srcs/sources_1/new/MOD_HW.v:35]
+INFO: [Synth 8-6155] done synthesizing module 'MOD_HW' (14#1) [D:/demo2/autoPUF/autoPUF.srcs/sources_1/new/MOD_HW.v:1]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 485.586 ; gain = 150.762
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 485.586 ; gain = 150.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 485.586 ; gain = 150.762
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/demo2/autoPUF/autoPUF.srcs/sources_1/ip/vio/vio/vio_in_context.xdc] for cell 'inst_vio'
+Finished Parsing XDC File [d:/demo2/autoPUF/autoPUF.srcs/sources_1/ip/vio/vio/vio_in_context.xdc] for cell 'inst_vio'
+Parsing XDC File [d:/demo2/autoPUF/autoPUF.srcs/sources_1/ip/ila/ila/ila_in_context.xdc] for cell 'inst_ila'
+Finished Parsing XDC File [d:/demo2/autoPUF/autoPUF.srcs/sources_1/ip/ila/ila/ila_in_context.xdc] for cell 'inst_ila'
+Parsing XDC File [D:/demo2/autoPUF/autoPUF.srcs/constrs_1/port.xdc]
+Finished Parsing XDC File [D:/demo2/autoPUF/autoPUF.srcs/constrs_1/port.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/demo2/autoPUF/autoPUF.srcs/constrs_1/port.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/MOD_HW_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/MOD_HW_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [D:/demo2/autoPUF/autoPUF.srcs/constrs_1/new/place.xdc]
+Finished Parsing XDC File [D:/demo2/autoPUF/autoPUF.srcs/constrs_1/new/place.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/demo2/autoPUF/autoPUF.srcs/constrs_1/new/place.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/MOD_HW_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/MOD_HW_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [D:/demo2/autoPUF/autoPUF.srcs/constrs_1/new/pblock.xdc]
+Finished Parsing XDC File [D:/demo2/autoPUF/autoPUF.srcs/constrs_1/new/pblock.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/demo2/autoPUF/autoPUF.srcs/constrs_1/new/pblock.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/MOD_HW_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/MOD_HW_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [D:/demo2/autoPUF/autoPUF.srcs/constrs_1/new/route.xdc]
+Finished Parsing XDC File [D:/demo2/autoPUF/autoPUF.srcs/constrs_1/new/route.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/demo2/autoPUF/autoPUF.srcs/constrs_1/new/route.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/MOD_HW_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/MOD_HW_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 837.770 ; gain = 0.000
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 837.770 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 837.770 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 837.770 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 837.770 ; gain = 502.945
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 837.770 ; gain = 502.945
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for inst_vio. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst_ila. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 837.770 ; gain = 502.945
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "CH_GEN" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RSP_CAPTURE" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 837.770 ; gain = 502.945
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 12    
++---Registers : 
+	               32 Bit    Registers := 4     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module MOD_BUF_CH_ADJ 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 3     
+Module MOD_CHCONTROL 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module MOD_LFSR 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 12    
++---Registers : 
+	               32 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+Module MOD_RSPCONTROL 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 837.770 ; gain = 502.945
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 837.770 ; gain = 502.945
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 837.770 ; gain = 502.945
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 846.797 ; gain = 511.973
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/demo2/autoPUF/autoPUF.srcs/sources_1/new/MOD_LFSR.v:11]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/demo2/autoPUF/autoPUF.srcs/sources_1/new/MOD_RSPCONTROL.v:8]
+WARNING: [Synth 8-5396] Clock pin G has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/demo2/autoPUF/autoPUF.srcs/sources_1/new/MOD_CHCONTROL.v:1]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/demo2/autoPUF/autoPUF.srcs/sources_1/new/MOD_ARBITER.v:8]
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 846.797 ; gain = 511.973
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 846.797 ; gain = 511.973
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 846.797 ; gain = 511.973
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 846.797 ; gain = 511.973
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 846.797 ; gain = 511.973
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 846.797 ; gain = 511.973
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |vio           |         1|
+|2     |ila           |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |ila    |     1|
+|2     |vio    |     1|
+|3     |BUFG   |     1|
+|4     |LUT2   |    64|
+|5     |LUT3   |    33|
+|6     |LUT4   |     2|
+|7     |LUT5   |     7|
+|8     |LUT6   |   141|
+|9     |FDCE   |    42|
+|10    |FDPE   |    33|
+|11    |FDRE   |    97|
+|12    |LDC    |    33|
+|13    |IBUFDS |     1|
++------+-------+------+
+
+Report Instance Areas: 
++------+-----------------------------+---------------+------+
+|      |Instance                     |Module         |Cells |
++------+-----------------------------+---------------+------+
+|1     |top                          |               |   552|
+|2     |  buf_ch_adj                 |MOD_BUF_CH_ADJ |    96|
+|3     |  chcontrol                  |MOD_CHCONTROL  |    21|
+|4     |  lfsr                       |MOD_LFSR       |   204|
+|5     |  apuf                       |MOD_APUF       |   130|
+|6     |    path0                    |MOD_PATH__1    |    64|
+|7     |      \genblk1[0].chblock    |MOD_BLOCK__127 |     1|
+|8     |      \genblk1[1].chblock    |MOD_BLOCK__126 |     1|
+|9     |      \genblk1[2].chblock    |MOD_BLOCK__125 |     1|
+|10    |      \genblk1[3].chblock    |MOD_BLOCK__124 |     1|
+|11    |      \genblk1[4].chblock    |MOD_BLOCK__123 |     1|
+|12    |      \genblk1[5].chblock    |MOD_BLOCK__122 |     1|
+|13    |      \genblk1[6].chblock    |MOD_BLOCK__121 |     1|
+|14    |      \genblk1[7].chblock    |MOD_BLOCK__120 |     1|
+|15    |      \genblk1[8].chblock    |MOD_BLOCK__119 |     1|
+|16    |      \genblk1[9].chblock    |MOD_BLOCK__118 |     1|
+|17    |      \genblk1[10].chblock   |MOD_BLOCK__117 |     1|
+|18    |      \genblk1[11].chblock   |MOD_BLOCK__116 |     1|
+|19    |      \genblk1[12].chblock   |MOD_BLOCK__115 |     1|
+|20    |      \genblk1[13].chblock   |MOD_BLOCK__114 |     1|
+|21    |      \genblk1[14].chblock   |MOD_BLOCK__113 |     1|
+|22    |      \genblk1[15].chblock   |MOD_BLOCK__112 |     1|
+|23    |      \genblk1[16].chblock   |MOD_BLOCK__111 |     1|
+|24    |      \genblk1[17].chblock   |MOD_BLOCK__110 |     1|
+|25    |      \genblk1[18].chblock   |MOD_BLOCK__109 |     1|
+|26    |      \genblk1[19].chblock   |MOD_BLOCK__108 |     1|
+|27    |      \genblk1[20].chblock   |MOD_BLOCK__107 |     1|
+|28    |      \genblk1[21].chblock   |MOD_BLOCK__106 |     1|
+|29    |      \genblk1[22].chblock   |MOD_BLOCK__105 |     1|
+|30    |      \genblk1[23].chblock   |MOD_BLOCK__104 |     1|
+|31    |      \genblk1[24].chblock   |MOD_BLOCK__103 |     1|
+|32    |      \genblk1[25].chblock   |MOD_BLOCK__102 |     1|
+|33    |      \genblk1[26].chblock   |MOD_BLOCK__101 |     1|
+|34    |      \genblk1[27].chblock   |MOD_BLOCK__100 |     1|
+|35    |      \genblk1[28].chblock   |MOD_BLOCK__99  |     1|
+|36    |      \genblk1[29].chblock   |MOD_BLOCK__98  |     1|
+|37    |      \genblk1[30].chblock   |MOD_BLOCK__97  |     1|
+|38    |      \genblk1[31].chblock   |MOD_BLOCK__96  |     1|
+|39    |      \genblk2[0].adjblock   |MOD_BLOCK__95  |     1|
+|40    |      \genblk2[1].adjblock   |MOD_BLOCK__94  |     1|
+|41    |      \genblk2[2].adjblock   |MOD_BLOCK__93  |     1|
+|42    |      \genblk2[3].adjblock   |MOD_BLOCK__92  |     1|
+|43    |      \genblk2[4].adjblock   |MOD_BLOCK__91  |     1|
+|44    |      \genblk2[5].adjblock   |MOD_BLOCK__90  |     1|
+|45    |      \genblk2[6].adjblock   |MOD_BLOCK__89  |     1|
+|46    |      \genblk2[7].adjblock   |MOD_BLOCK__88  |     1|
+|47    |      \genblk2[8].adjblock   |MOD_BLOCK__87  |     1|
+|48    |      \genblk2[9].adjblock   |MOD_BLOCK__86  |     1|
+|49    |      \genblk2[10].adjblock  |MOD_BLOCK__85  |     1|
+|50    |      \genblk2[11].adjblock  |MOD_BLOCK__84  |     1|
+|51    |      \genblk2[12].adjblock  |MOD_BLOCK__83  |     1|
+|52    |      \genblk2[13].adjblock  |MOD_BLOCK__82  |     1|
+|53    |      \genblk2[14].adjblock  |MOD_BLOCK__81  |     1|
+|54    |      \genblk2[15].adjblock  |MOD_BLOCK__80  |     1|
+|55    |      \genblk2[16].adjblock  |MOD_BLOCK__79  |     1|
+|56    |      \genblk2[17].adjblock  |MOD_BLOCK__78  |     1|
+|57    |      \genblk2[18].adjblock  |MOD_BLOCK__77  |     1|
+|58    |      \genblk2[19].adjblock  |MOD_BLOCK__76  |     1|
+|59    |      \genblk2[20].adjblock  |MOD_BLOCK__75  |     1|
+|60    |      \genblk2[21].adjblock  |MOD_BLOCK__74  |     1|
+|61    |      \genblk2[22].adjblock  |MOD_BLOCK__73  |     1|
+|62    |      \genblk2[23].adjblock  |MOD_BLOCK__72  |     1|
+|63    |      \genblk2[24].adjblock  |MOD_BLOCK__71  |     1|
+|64    |      \genblk2[25].adjblock  |MOD_BLOCK__70  |     1|
+|65    |      \genblk2[26].adjblock  |MOD_BLOCK__69  |     1|
+|66    |      \genblk2[27].adjblock  |MOD_BLOCK__68  |     1|
+|67    |      \genblk2[28].adjblock  |MOD_BLOCK__67  |     1|
+|68    |      \genblk2[29].adjblock  |MOD_BLOCK__66  |     1|
+|69    |      \genblk2[30].adjblock  |MOD_BLOCK__65  |     1|
+|70    |      \genblk2[31].adjblock  |MOD_BLOCK__64  |     1|
+|71    |    path1                    |MOD_PATH       |    64|
+|72    |      \genblk1[0].chblock    |MOD_BLOCK__1   |     1|
+|73    |      \genblk1[1].chblock    |MOD_BLOCK__2   |     1|
+|74    |      \genblk1[2].chblock    |MOD_BLOCK__3   |     1|
+|75    |      \genblk1[3].chblock    |MOD_BLOCK__4   |     1|
+|76    |      \genblk1[4].chblock    |MOD_BLOCK__5   |     1|
+|77    |      \genblk1[5].chblock    |MOD_BLOCK__6   |     1|
+|78    |      \genblk1[6].chblock    |MOD_BLOCK__7   |     1|
+|79    |      \genblk1[7].chblock    |MOD_BLOCK__8   |     1|
+|80    |      \genblk1[8].chblock    |MOD_BLOCK__9   |     1|
+|81    |      \genblk1[9].chblock    |MOD_BLOCK__10  |     1|
+|82    |      \genblk1[10].chblock   |MOD_BLOCK__11  |     1|
+|83    |      \genblk1[11].chblock   |MOD_BLOCK__12  |     1|
+|84    |      \genblk1[12].chblock   |MOD_BLOCK__13  |     1|
+|85    |      \genblk1[13].chblock   |MOD_BLOCK__14  |     1|
+|86    |      \genblk1[14].chblock   |MOD_BLOCK__15  |     1|
+|87    |      \genblk1[15].chblock   |MOD_BLOCK__16  |     1|
+|88    |      \genblk1[16].chblock   |MOD_BLOCK__17  |     1|
+|89    |      \genblk1[17].chblock   |MOD_BLOCK__18  |     1|
+|90    |      \genblk1[18].chblock   |MOD_BLOCK__19  |     1|
+|91    |      \genblk1[19].chblock   |MOD_BLOCK__20  |     1|
+|92    |      \genblk1[20].chblock   |MOD_BLOCK__21  |     1|
+|93    |      \genblk1[21].chblock   |MOD_BLOCK__22  |     1|
+|94    |      \genblk1[22].chblock   |MOD_BLOCK__23  |     1|
+|95    |      \genblk1[23].chblock   |MOD_BLOCK__24  |     1|
+|96    |      \genblk1[24].chblock   |MOD_BLOCK__25  |     1|
+|97    |      \genblk1[25].chblock   |MOD_BLOCK__26  |     1|
+|98    |      \genblk1[26].chblock   |MOD_BLOCK__27  |     1|
+|99    |      \genblk1[27].chblock   |MOD_BLOCK__28  |     1|
+|100   |      \genblk1[28].chblock   |MOD_BLOCK__29  |     1|
+|101   |      \genblk1[29].chblock   |MOD_BLOCK__30  |     1|
+|102   |      \genblk1[30].chblock   |MOD_BLOCK__31  |     1|
+|103   |      \genblk1[31].chblock   |MOD_BLOCK__32  |     1|
+|104   |      \genblk2[0].adjblock   |MOD_BLOCK__33  |     1|
+|105   |      \genblk2[1].adjblock   |MOD_BLOCK__34  |     1|
+|106   |      \genblk2[2].adjblock   |MOD_BLOCK__35  |     1|
+|107   |      \genblk2[3].adjblock   |MOD_BLOCK__36  |     1|
+|108   |      \genblk2[4].adjblock   |MOD_BLOCK__37  |     1|
+|109   |      \genblk2[5].adjblock   |MOD_BLOCK__38  |     1|
+|110   |      \genblk2[6].adjblock   |MOD_BLOCK__39  |     1|
+|111   |      \genblk2[7].adjblock   |MOD_BLOCK__40  |     1|
+|112   |      \genblk2[8].adjblock   |MOD_BLOCK__41  |     1|
+|113   |      \genblk2[9].adjblock   |MOD_BLOCK__42  |     1|
+|114   |      \genblk2[10].adjblock  |MOD_BLOCK__43  |     1|
+|115   |      \genblk2[11].adjblock  |MOD_BLOCK__44  |     1|
+|116   |      \genblk2[12].adjblock  |MOD_BLOCK__45  |     1|
+|117   |      \genblk2[13].adjblock  |MOD_BLOCK__46  |     1|
+|118   |      \genblk2[14].adjblock  |MOD_BLOCK__47  |     1|
+|119   |      \genblk2[15].adjblock  |MOD_BLOCK__48  |     1|
+|120   |      \genblk2[16].adjblock  |MOD_BLOCK__49  |     1|
+|121   |      \genblk2[17].adjblock  |MOD_BLOCK__50  |     1|
+|122   |      \genblk2[18].adjblock  |MOD_BLOCK__51  |     1|
+|123   |      \genblk2[19].adjblock  |MOD_BLOCK__52  |     1|
+|124   |      \genblk2[20].adjblock  |MOD_BLOCK__53  |     1|
+|125   |      \genblk2[21].adjblock  |MOD_BLOCK__54  |     1|
+|126   |      \genblk2[22].adjblock  |MOD_BLOCK__55  |     1|
+|127   |      \genblk2[23].adjblock  |MOD_BLOCK__56  |     1|
+|128   |      \genblk2[24].adjblock  |MOD_BLOCK__57  |     1|
+|129   |      \genblk2[25].adjblock  |MOD_BLOCK__58  |     1|
+|130   |      \genblk2[26].adjblock  |MOD_BLOCK__59  |     1|
+|131   |      \genblk2[27].adjblock  |MOD_BLOCK__60  |     1|
+|132   |      \genblk2[28].adjblock  |MOD_BLOCK__61  |     1|
+|133   |      \genblk2[29].adjblock  |MOD_BLOCK__62  |     1|
+|134   |      \genblk2[30].adjblock  |MOD_BLOCK__63  |     1|
+|135   |      \genblk2[31].adjblock  |MOD_BLOCK      |     1|
+|136   |    arbiter                  |MOD_ARBITER    |     1|
+|137   |  rspcontrol                 |MOD_RSPCONTROL |     1|
++------+-----------------------------+---------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 846.797 ; gain = 511.973
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 4 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:19 . Memory (MB): peak = 846.797 ; gain = 159.789
+Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 846.797 ; gain = 511.973
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 34 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 860.094 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 33 instances were transformed.
+  LDC => LDCE: 33 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+71 Infos, 6 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 860.094 ; gain = 527.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 860.094 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/demo2/autoPUF/autoPUF.runs/synth_1/MOD_HW.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file MOD_HW_utilization_synth.rpt -pb MOD_HW_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Mar 15 13:54:26 2019...
