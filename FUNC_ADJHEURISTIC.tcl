@@ -10,7 +10,7 @@
 # ah_contfail
 # ah_file_adj
 ###########################################
-
+# ADJBIT = 32
 set rs_repeat 1
 #读取种子至数组rs_ch_seed
 set finchseed [open $ah_file_adj_chseed r]
@@ -121,11 +121,13 @@ set countcontfail 0
 for {set iter 1} {$iter<=$max_iter} {} {
 
 	set flag_adj 0
-	set adj_id [expr int(2*$ADJBIT*rand())]
+	#[0-63]随机生成要进行01比特翻转的index
+	set adj_id [expr int(2*$ADJBIT*rand())]  
 
 	#puts "$iter $adj_id $ah_adj_fix($adj_id)"
-
+	#对随机产生的index指向的位置进行调整信号的翻转
 	if {$ah_adj_fix($adj_id)==0} {
+	#如果当前uniform小于目标uniform，则将adj0中的1翻转为0，或者将adj1中的0翻转为1
 		if {$current_uniform<$ah_uniform_target} {
 			if {$adj_id<$ADJBIT} {
 				if {$H_ADJ0($adj_id)==1} {
@@ -173,8 +175,9 @@ for {set iter 1} {$iter<=$max_iter} {} {
 			set new_uniform_delta [expr 0.0-$new_uniform_delta]
 		}
 
-#		puts "$iter $rs_adj0 $rs_adj1 $new_uniform $new_uniform_delta $adj_id"
-
+		#puts "$iter $rs_adj0 $rs_adj1 $new_uniform $new_uniform_delta $adj_id"
+		#如果new_uniform_delta > current_uniform_delta,
+		#则将调整信号恢复为未翻转之前的值，否则则接受当前的调整信号。
 		if {$new_uniform_delta>$current_uniform_delta} {
 			incr countcontfail
 
@@ -211,7 +214,7 @@ for {set iter 1} {$iter<=$max_iter} {} {
 	}
 }
 #puts "BEST: $BEST_ADJ0 $BEST_ADJ1 $BEST_UNIFORM $BEST_UNIFORM_DELTA"
-
+#将得到的最好的调整信号和目标uniform写入文件X.adj中。
 set ah_adj0 $BEST_ADJ0
 set ah_adj1 $BEST_ADJ1
 set ah_uniform $BEST_UNIFORM

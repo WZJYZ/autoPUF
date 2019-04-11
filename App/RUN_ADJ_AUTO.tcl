@@ -22,13 +22,18 @@ if {1} {
 #初始化调整信号
   set ah_check_01 1
   set ah_adj_init ""
+  #ah_adj_fix和ah_adj_init都是64位
   for {set i 0} {$i<[expr 2*$ADJBIT]} {incr i} {
   	set ah_adj_fix($i) 0
+    #[expr int(2*rand())] 产生01比特序列
   	append ah_adj_init [expr int(2*rand())]
   }
 #设置uniform目标值
-  set ah_uniform_target 0.5  
+
+# set ah_uniform_target 0.5  
+  set ah_uniform_target 0.5
 #<
+# set ah_file_adj $FOLDER_CRP/adj/50.adj
   set ah_file_adj $FOLDER_CRP/adj/50.adj
 #>
 
@@ -40,15 +45,19 @@ if {1} {
 ############### fix adj bit ####################
 ################################################
 #将上一步获得的$ah_adj0和$ah_adj1合并到ah_adj_init
+#然后从50%的uniform左右进行调整。
 #<
-if {1} {
+if {0} {
 #>
+#0-31
   set ah_adj_init ""
   set chars [split $ah_adj0 ""]
   for {set i 0} {$i<$ADJBIT} {incr i} {
     set ah_adj_fix($i) [lindex $chars $i]
     append ah_adj_init $ah_adj_fix($i)
   }
+
+#31-63
   set chars [split $ah_adj1 ""]
   for {set i 0} {$i<$ADJBIT} {incr i} {
     set j [expr $ADJBIT+$i]
@@ -59,7 +68,7 @@ if {1} {
 
 #寻找目标分别为uniform为0.1，0.3，0.7和0.9的调整信号
 #<
-if {1} {
+if {0} {
 #>
   set ah_check_01 0
 #<
