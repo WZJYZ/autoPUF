@@ -1,4 +1,5 @@
 #<
+#设置某个adj_target,如50，在循环次数，如num_repeat为10,下的激励相应对。
 set num_adj 5
 set adj_target(0) 50
 set adj_target(1) 10
@@ -14,7 +15,7 @@ set num_repeat(4) 2
 set runcrp_setid 0
 #avoid losing all the data due to unexpected errors of vivado
 for {set runcrp_setid 0} {$runcrp_setid<2} {incr runcrp_setid} {
-
+  #每次循环产生一个种子
   set cs_num_crp 100
   set cs_file_adjchseed $FOLDER_CRP/crp/c$cs_num_crp\_id$runcrp_setid.chseed
   set runcrp_file_crp $FOLDER_CRP/crp/c$cs_num_crp\_id$runcrp_setid.crp
@@ -28,7 +29,8 @@ for {set runcrp_setid 0} {$runcrp_setid<2} {incr runcrp_setid} {
   	gets $finadj line
   	regexp {(\S+)\s+(\S+)\s+\S+} $line match rs_adj0 rs_adj1
   	close $finadj
-  	
+  	#
+	#读取前面生成的种子
   	set finchseed [open $cs_file_adjchseed r]
   	gets $finchseed rs_num_active
   	for {set a 0} {$a<$rs_num_active} {incr a} {
@@ -62,5 +64,4 @@ for {set runcrp_setid 0} {$runcrp_setid<2} {incr runcrp_setid} {
   	puts $foutcrp ""
   }
   close $foutcrp
-  
 }

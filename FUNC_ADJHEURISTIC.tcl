@@ -142,7 +142,9 @@ for {set iter 1} {$iter<=$max_iter} {} {
 				}
 			}
 		}
-
+		#当前uniform大于目标uniform，说明path0的延迟小于路径1的延迟，
+		#则通过在path0增加延迟，或者path1减小延迟进行调整，
+		#即adj0中增加1的个数，或者adj1中减少1的个数。
 		if {$current_uniform>$ah_uniform_target} {
 			if {$adj_id<$ADJBIT} {
 				if {$H_ADJ0($adj_id)==0} {

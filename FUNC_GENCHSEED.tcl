@@ -14,7 +14,7 @@ set foutchseed [open $cs_file_adjchseed w]
 puts $foutchseed $cs_num_active
 for {set i 0} {$i<$cs_num_active} {incr i} {
 	#调用RANDBINARY函数生成长度为32的种子
-	set ch_seed [RANDBINARY $CHBIT] 
+	set ch_seed [RANDBINARY $CHBIT]
 	#将种子保存在adj/m.chseed文件中
 	puts $foutchseed $ch_seed
 }
@@ -22,4 +22,3 @@ for {set i 0} {$i<$cs_num_active} {incr i} {
 close $foutchseed
 
 # output:
-     

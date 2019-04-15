@@ -82,7 +82,7 @@ for {set rs_c 0} {$rs_c<$rs_num_crp} {incr rs_c} {
 		set rs_uniform  [expr $rs_uniform+1.0]
 	}
 	if {$thisrsp<0.5} {
-		set rs_reliable [expr $rs_reliable+1.0-$thisrsp]
+		set rs_reliable [expr $rs_ reliable+1.0-$thisrsp]
 	} else {
 		set rs_reliable [expr $rs_reliable+$thisrsp]
 	}
